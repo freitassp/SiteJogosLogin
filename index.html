@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex align-items-center justify-content-center min-vh-100 bg-login-image">
+        <div class="card shadow-lg p-4 p-md-5 border-light" style="max-width: 400px; width: 100%;">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">Login</h2>
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Usuário</label>
+                        <input type="text" id="username" class="form-control" placeholder="Digite seu usuário" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Senha</label>
+                        <input type="password" id="password" class="form-control" placeholder="Digite sua senha" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                    <p id="error-message" class="text-danger text-center mt-3"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Link para o arquivo JavaScript separado -->
+    <script src="script.js"></script>
+</body>
+</html>
